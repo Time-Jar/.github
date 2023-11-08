@@ -1,4 +1,4 @@
-# Time jar
+# Time Jar
 
 ## Overview 
 
