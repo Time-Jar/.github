@@ -1,28 +1,28 @@
 # Time Jar
 
-## Overview 
+## Overview
 
-With the emergence of pervasive computing devices as well as social networks such as Facebook, Instagram, TikTok, YouTube and so on, it has become increasingly difficult to maintain focus and productivity throughout the day. The constant distractions offered by these mobile devices and platforms, which are designed to capture our attention, have a significant impact on our ability to stay focused on our tasks and get our work done effectively. As a result, many people face challenges to their ability to manage their time optimally and therefore, it has significant repercussions on their overall well-being. 
+In today's era dominated by pervasive computing devices and an array of social networks like Facebook, Instagram, TikTok, and YouTube, maintaining focus and productivity has become a herculean task. The relentless distractions from these platforms, designed to capture and hold our attention, substantially hinder our ability to concentrate on tasks and perform effectively. This pervasive issue not only challenges our time management skills but also significantly impacts our overall well-being.
 
-While existing solutions such as screen time management applications provide statistics, they are unable to detect when applications should be blocked. This has many shortcomings: 
+Current screen time management applications, though providing useful statistics, fall short in several areas:
+* They fail to recognize the varied purposes of app usage, such as distinguishing between work, educational, and leisure activities.
+* They lack the capability to consider the user's location and time, missing contextual nuances like the non-distractive nature of listening to music while commuting.
+* They do not account for the user's personal schedule and tasks, essential for tailoring app usage to suit individual responsibilities and commitments.
+* They are not designed to proactively remind users about their prioritized tasks and responsibilities.
 
-* Inability to differentiate between different purposes on the same app (for example work, school, and free time usage), 
-* Inability to take the location and time into account: it is not distracting listening to music on a bus, 
-* Inability to understand the users schedule and tasks: usage should be dependent based on its obligations (liabilities such as visiting parents, preparing for exam), 
-* Unable to remind us of the work we should be doing. 
+A more effective approach involves making app blocking sensitive to time, location, and context. The goal is to minimize or eliminate non-productive app time, with adaptive allowances based on the user's situation – like limiting entertainment apps during work hours but allowing them during commutes or leisure times.
 
-Blocking should be time, location and context agnostic. Non-productive time on apps should be minimized or potentially even eliminated. Watching TikTok should be time limited or available when you can’t do productive tasks (like on a bus). Watching YouTube should be limited for non-productive work, while productive wouldn’t be. Being at dinner with friends would block all non-necessary apps to prevent distractions. 
+## Motivations and Challenges
 
-## Motivations and challenges 
+This project is driven by the goal to enhance personal productivity and well-being. The effectiveness of this endeavor will be assessed through user surveys. The core challenge lies in developing an in-depth understanding of the user's habits, schedule, and work-life balance, and integrating these with historical and current lifestyle patterns. This challenge is compounded by the absence of any existing application with similar capabilities on the market. Our aim is not to impose app blocks but to encourage users to cultivate better usage habits through heightened awareness and prioritization.
 
-This project aims to improve people’s productivity and well-being. This will be measured using a survey. Namely, understanding the user, its habits, schedule, and work, while coordinating it with history, current events, and lifestyle is proven to be difficult, as there is currently no app like it on the market. Our goal is not to block apps, but namely to enable users to adapt better usage habits by being more aware of their actions as well as reminding them of what is important. 
+## Solution
 
-## Solution 
+We propose the development of an Android application endowed with features akin to the artificial intelligence system Jarvis, offering:
 
-Our proposed solution is to develop an Android app, with Jarvis like features: 
+* Interactive Queries: Post-app usage, the app will prompt users with questions to gain insights into their behavior and to differentiate between productive and non-productive usage of various apps.
+* Movement and Location Tracking: Utilizing accelerometer and location data, the app will detect the user's mode of movement (walking, driving, stationary, etc.) to fine-tune its functionality.
+* Contextual App Usage Tracking: The app will monitor app usage in conjunction with the user's context, adjusting accessibility based on real-time circumstances.
+* Adaptive Machine Learning: Central to the app is a machine learning model that continuously evolves by learning from user feedback and observed behavior patterns. Given the uniqueness of our use case, we will collect and utilize user-generated data to train and refine our model.
 
-* App asks questions after user closes app, regarding usage for better understanding of users' behavior and recognizing which apps and at what time they are used for productive and non-productive work. 
-* Accelerometer and location tracking: for sensing users' movement by foot, car or being still. 
-* App usage and context tracking. 
-* Calander and TODO list reading (we expect to do this within the app, as we are highly unlikely to be able to get users that use the same calendar and TODO list apps); we would be gathering task priority, preparation time needed before the task and task title as well as description. 
-* A machine learning model that continuously learns from user behavior. It mainly learns from users' feedback to questions and monitored behavior. There is no training data available with our specific use case, so we will need to gather it. 
+In essence, Time Jar is not merely a tool for managing screen time; it is a comprehensive solution designed to promote a healthier digital lifestyle, enhancing productivity and well-being through context-aware technology and user-centric design.
